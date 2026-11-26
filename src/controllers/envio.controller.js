@@ -48,7 +48,7 @@ const enviosActivos = async (req, res) => {
   } catch (error) {
     res.status(500).json({
       message: "Error al listar envios activos",
-      message: error.message,
+      error: error.message,
     });
   }
 };
